@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  plyststarter:
+    image: plyststarter
+    build:
+      context: .
+      dockerfile: App/Dockerfile
+    ports: 
+      - "5000:5000"
+  
